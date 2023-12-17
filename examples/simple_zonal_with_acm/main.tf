@@ -31,7 +31,7 @@ provider "kubernetes" {
 }
 
 module "gke" {
-  source     = "../../"
+  source     = "terraform-google-modules/kubernetes-engine/google"
   project_id = var.project_id
   regional   = false
   region     = var.region

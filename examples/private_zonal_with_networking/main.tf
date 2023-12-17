@@ -60,7 +60,7 @@ data "google_compute_subnetwork" "subnetwork" {
 }
 
 module "gke" {
-  source     = "../../modules/private-cluster/"
+  source     = "terraform-google-modules/kubernetes-engine/google//modules/private-cluster"
   project_id = var.project_id
   name       = var.cluster_name
   regional   = false

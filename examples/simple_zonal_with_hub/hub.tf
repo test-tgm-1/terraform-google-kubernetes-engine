@@ -15,7 +15,7 @@
  */
 
 module "hub" {
-  source       = "../../modules/fleet-membership"
+  source       = "terraform-google-modules/kubernetes-engine/google//modules/fleet-membership"
   project_id   = var.project_id
   location     = module.gke.location
   cluster_name = module.gke.name
